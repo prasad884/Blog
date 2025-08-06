@@ -28,7 +28,7 @@ app.get("/view-blog", (req, res) => {
 
   // validating  the Index Number
   if (isNaN(blogIndex) || blogIndex < 0 || blogIndex >= blogs.length) {
-    res.status(404).send("Blog no encontrado"); // Error 
+    res.status(404).send("no Blog"); // Error 
   } else {
     const blog = blogs[blogIndex]; 
 
